@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Formulario general */
+.formulario {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Sección de puestos */
+.puestos {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+.puesto-section {
+    margin-bottom: 30px;
+}
+
+.puesto-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.puesto-card {
+    background-color: #2a2a2a;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.puesto-card:hover {
+    transform: scale(1.05);
+}
+
+.puesto-card.free {
+    background-color: #4caf50; /* Verde para puestos libres */
+}
+
+.puesto-card.occupied {
+    background-color: #e53935; /* Rojo para puestos ocupados */
+}
+
+.puesto-card p {
+    margin: 8px 0;
+}
+
+.no-puestos {
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+}
